@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkTogether</title>
+    <style>
+        #header {
+            position: relative;
+            /* height: 250px; */
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            
+        }
+
+        a:hover {
+            text-decoration: none;
+            text-decoration-color: yellow;
+        }
+        #footer_info2 > ul>li>a {
+            text-decoration: none;
+        }
+
+        body {
+            /* font-family: 'ng', sans-serif; */
+            font-size: 12px;
+            color: #333;
+        }
+
+        #top_header {
+            /* width: 1300px; */
+            height: 32px;
+            background: #F0F6ED;
+            display: block;
+            
+        }
+
+        #top1 {
+            width: 910px;
+            /* height: 44px; */
+            margin-left : 500px;
+            border-left: 1px solid #dce6d7;
+            border-right: 1px solid #dce6d7;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        #top2 {
+            /* width: 597.63px; */
+            float: right;
+            overflow: hidden;
+            height: 32px;
+            line-height: 30px;
+        }
+
+        #top2>ul {
+            /* width: 420px; */
+            float: left;
+            overflow: hidden;
+            position: relative;
+            border-right: 1px solid #dce6d7;
+            /* margin-left: 500px; */
+            /* margin-right: 191px; */
+            height: 32px;
+            /* line-height: 30px; */
+        }
+        #top2>ul>li {
+            /* float: right; */
+            overflow: hidden;
+            position: relative;
+            /* margin-left: 500px; */
+            /* height: 32px; */
+            line-height: 30px;
+
+            /* padding-left: 20px; */
+            
+            margin-right: 20px;
+            float: left;
+        }
+
+        #logo {
+            /* overflow: hidden; */
+            line-height: 30px;
+            /* position: relative; */
+            float: left;
+            padding: 0 10px;
+            /* margin-left : 710px; */
+            /* vertical-align: middle; */
+            /* line-height: 32px; */
+        }
+        #logo>img {
+            vertical-align: middle;
+        }
+
+        #mid {
+            width: 910px;
+            height: 70px;
+            margin-left: 500px;
+            /* border-left: 1px solid #dce6d7;
+            border-right: 1px solid #dce6d7; */
+            overflow: hidden;
+        }
+
+        #mid>h1 {
+            margin-top: 15px;
+
+        }
+
+
+
+
+
+        .green {
+            color: #007328
+        }
+
+        .gray {
+            color: #666666
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        
+
+        #footer {
+            height: 44px;
+            background: #44971B;
+            display: block;
+
+        }
+
+        #footer_info1 {
+            /* height: 44px; */
+            width: 711px;
+            margin-left: 500px;
+            font-size: 16px;
+            border-left: 1px solid #69ac49;
+            border-right: 1px solid #69ac49;
+            overflow: hidden;
+            position: relative;
+            float: left;
+        }
+
+        #footer_info1>ul>li>a {
+            height: 44px;
+            line-height: 44px;
+            font-family: 'ngb';
+            width: 141.8px;
+            text-align: center;
+            float: left;
+            /* height:44px; 
+            line-height:44px;  */
+            color: white;
+            font-size: 16px;
+            /* font-family: 'ngb'; 
+            text-align:center; 
+            letter-spacing:-0.5px; 
+            background-color:#44971b;} */
+        }
+
+         #footer_info2 {
+            width: 199px;
+            float: left;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            border-right: 1px solid #69ac49;
+             float: left; 
+        }
+
+        #footer_info2>ul>li {
+            width: 99px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 14px;
+            color: #afff90;
+            font-family: 'ngb';
+            letter-spacing: -0.5px;
+            text-align: center;
+            float: left;
+        } 
+        .item1 > ul{
+            display: none;
+        }
+        #footer_info1 > ul > li:hover > ul {
+            /* width: 200px; */
+            display: block;
+            padding-top: 50px;
+            margin: 0 auto;
+            position: relative;
+        }
+        #search{
+            width: 200px;
+            height: 40px;
+            float: right;
+    position: relative;
+    border: 4px solid #1c7a38;
+    padding-right: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="top_header">
+            <div id="top1">
+                <div id="top2">
+                    <ul>
+                        <li class="green">로그인</li>
+                        <li class="green">회원가입</li>
+                        <li class="gray">마이페이지</li>
+                        <li class="gray">고객센터</li>
+                        <li class="gray">원격제어</li>
+                        <li class="gray">사이트맵</li>
+                    </ul>
+                    <div id="logo">
+                        <span class="gray">글자크기</span>
+                        <img src="https://www.worktogether.or.kr/images/common/layout/n_zoomin.gif" alt=""><!--
+                        --><img src="https://www.worktogether.or.kr/images/common/layout/n_zoomreset.gif" alt=""><!--
+                        --><img src="https://www.worktogether.or.kr/images/common/layout/n_zoomout.gif" alt=""><!--
+                        --><img src="https://www.worktogether.or.kr/images/common/layout/n_g_worknet.gif" alt=""><!--
+                    --></div>
+                </div>
+            </div>
+        </div>
+        <div id="mid">
+            <h1>
+                <img src="https://www.worktogether.or.kr/images/common/layout/n_logo.gif" alt="">
+                <input type="search" name="" id="search" >
+            </h1>
+        </div>
+        <div id="footer">
+            <!-- .item1 > ul{
+                display: none;
+            }
+            #footer_info1 > ul > li:hover > ul {
+                display: block;
+            } -->
+            <div id="footer_info1">
+                <ul>
+                    <li class="item1"><a href="https://www.worktogether.or.kr/empInfo/empInfoSrch/list/dtlEmpMainList.do"> 채용정보</a>
+                        <ul>
+                            <li><a href="https://www.worktogether.or.kr/empInfo/empInfoSrch/list/dtlEmpMainList.do">채용정보 상세검색</a></li>
+                            <li><a href="https://www.worktogether.or.kr/empInfo/empInfoSrch/list/retriveWorkRegionEmpIntroList.do">지역별</a></li>
+                            <li><a href="https://www.worktogether.or.kr/empInfo/empInfoSrch/list/retriveJobsEmpIntroList.do">업직종별</a></li>
+                            <li><a href="https://www.worktogether.or.kr/empInfo/empInfoBbs/empScrapInfoList.do">간편 우리지사 채용정보</a></li>
+                            <li><a href="https://www.worktogether.or.kr/empInfo/empInfoSrch/list/retriveEnterEmpMainList.do?pageCode=01">기업형태별</a></li>
+                        </ul>
+                    </li>
+                    <li class="item1"><a href="https://www.worktogether.or.kr/psnInfo/psnInfoSrch/dtlPsnSrchMain.do">인재정보</a>
+                        <ul>
+                            <li><a href="https://www.worktogether.or.kr/psnInfo/psnInfoSrch/dtlPsnSrchMain.do">인재상세검색</a></li>
+                            <li><a href="https://www.worktogether.or.kr/psnInfo/psnInfoSrch/jobsPsnSrchMain.do">직종별</a></li>
+                            <li><a href="https://www.worktogether.or.kr/psnInfo/psnInfoSrch/hopeWorkRegionPsnSrchMain.do">지역별</a></li>
+                            <li><a href="https://www.worktogether.or.kr/psnInfo/psnInfoSrch/majorDptPsnSrchMain.do">전공계열별</a></li>
+                        </ul>
+                    </li>
+                    <li class="item1"><a href="https://www.worktogether.or.kr/eduInfo/edu/eduInfoView.do">교육정보</a>
+                        <ul>
+                            <li><a href="https://www.worktogether.or.kr/eduInfo/edu/eduInfoView.do">교육안내</a></li>
+                            <li><a href="https://www.worktogether.or.kr/eduInfo/trainInfo/eduTrainInfoList.do">교육훈련정보</a></li>
+                        </ul>
+                    </li>
+                    <li class="item1"><a href="https://www.worktogether.or.kr/workGuide/counselBoard/counselList.do">취업가이드</a>
+                        <ul>
+                            <li><a href="https://www.worktogether.or.kr/workGuide/counselBoard/counselList.do">취업상담</a></li>
+                            <li><a href="https://www.worktogether.or.kr/workGuide/jobPsyExam/jobPsyExamInfo.do">직업능력평가</a></li>
+                            <li><a href="https://www.worktogether.or.kr/workGuide/onlineSrv/majorCompanyEmpGuide.do">온라인 취업준비</a></li>
+                            <li><a href="https://www.worktogether.or.kr/workGuide/disabledInfo/disabledAtoz01.do">장애인 A to Z</a></li>
+                        </ul>
+                    </li>
+                    <li class="item1"><a href="https://www.worktogether.or.kr/policyInfo/guide/grantMoney.do">지원정책</a>
+                        <ul>
+                            <li><a href="https://www.worktogether.or.kr/policyInfo/guide/grantMoney.do">장애인고용장려금안내</a></li>
+                            <li><a href="https://www.worktogether.or.kr/policyInfo/guide/grantBusi.do">사업주지원제도안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer_info2">
+                <ul>
+                    <li>구직신청</li>
+                    <li>구인신청</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
