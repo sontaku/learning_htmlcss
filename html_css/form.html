@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식</title>
+</head>
+<body>
+    <h1>입력양식</h1>
+    <!-- 
+        https://search.naver.com/search.naver?query=java 
+        위의 주소값에서 'query=java'를 제외한 영역이 action이다.
+    -->
+    <form action="https://www.google.com/search?q=">
+        <input type="text" name="query" id="구글">
+    </form>
+    <form action="https://search.naver.com/search.naver?">
+        <input type="text" name="query" id="네이버"><br>
+        <input type="text" name="query2" id="네이버"> 
+        <!--중복 text 검색창은 첫번째꺼 이외 무효함-->
+        <!-- 하지만 내용은 전송이 됨 -> query=111&query2=222 -->
+        <input type="submit" value="전송">
+        <!-- 2개 이상 검색창은 submit -->
+    </form>
+    <form action="http://localhost:8081/form_jsp/form_res.jsp">
+        <input type="text" name="query" id="jsptest"><br>
+        <!--중복 text 검색창은 첫번째꺼 이외 무효함-->
+        <!-- 하지만 내용은 전송이 됨 -> query=111&query2=222 -->
+        <input type="checkbox" name="chk" id="" checked>과제제출했음<br>
+        <input type="radio" name="gender" value="male">남
+        <input type="radio" name="gender" value="female">여 <!--name이 같을 경우 하나만 선택 가능-->
+        <!-- 2개 이상 검색창은 submit -->
+
+        <input type="color" name="mycolor" id="">
+        <input type="hidden" name="myname" value="손진영">
+        <input type="submit" value="전송">
+    </form>
+    <br>
+   
+  
+</body>
+</html>

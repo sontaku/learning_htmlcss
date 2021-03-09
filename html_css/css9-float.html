@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float 레이아웃</title>
+    <style>
+        #top{
+            background: lightsalmon;
+            width: 500px;
+            height: 100px;
+        }
+        #left{
+            /* background: burlywood; */
+            /* background: khaki; */
+            width: 150px;
+            height: 400px;
+            float: left;
+        }
+        #left1{
+            background: burlywood;
+            /* background: khaki; */
+            width: 150px;
+            height: 200px;
+            /* float: left; */
+            /* padding-left: 150px; */
+
+        } 
+         #left2{
+            /* background: burlywood; */
+            background: orange;
+            width: 150px;
+            height: 200px;
+            /* float: left; */
+            /* padding-left: 150px; */
+
+        } 
+        
+        #content{
+            background: lightgoldenrodyellow;
+            width: 350px;
+            height: 400px;
+            margin-left: 150px;
+            /* padding-left: 150px; */
+        }
+        #footer {
+            background: lightgrey;
+            width: 500px;
+            height: 100px;
+            /* clear: left; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        맨 위 메뉴
+    </div>
+    <div id="left">
+        <div id="left1">
+        좌측 메뉴1
+        </div>
+        <div id="left2">
+        좌측 메뉴2
+        </div>
+    </div>
+    <div id="content">
+        우측 내용
+    </div>
+    <div id="footer">
+        하단 꼬릿말
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2</title>
+    <style>
+        ul > li{color: red;}
+        /* ul li{color: blue;} */
+        li{color:blue;}
+
+
+        h1 ~ h2{background-color: yellow;}
+
+        h1:hover{border: 3px dashed red;}
+        h1:hover + h2{border: 3px dashed red;}
+
+        /* input + span{display: none;}
+        input:focus + span{display: inline;} */
+
+        /* input + span{visibility: hidden;}
+        input:focus + span{visibility: visible;} */
+
+        
+    </style>
+</head>
+<body>
+    <h1>후손과 자손</h1>
+    <h2>좋아하는 가수들</h2>
+    <ul>
+        <li>현미</li>
+        <li>현숙</li>
+        <li>현철</li>
+    </ul>
+
+    <h2>프로그래밍 언어</h2>
+    <ol>
+        <li>자바</li>
+        <li>파이썬</li>
+    </ol>
+
+    <form action="">
+        이름:<input type="text">
+        <span>이름을 입력해주세요</span><br>
+        주소:<input type="text">
+        <span>주소를 입력해주세요</span><br>
+        나이:<input type="text">
+        <span>나이를 입력해주세요</span>
+    </form>
+</body>
+</html>

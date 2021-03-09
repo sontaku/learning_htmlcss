@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수평메뉴</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 100px;
+            border: 3px solid lightslategray;
+            text-align: center;
+        }
+
+        span:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+
+        span:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+
+        nav>ul {
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav>ul>li {
+            float: left;
+            margin: 3px;
+        }
+
+        a {
+            text-decoration: wavy tomato;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .item1>ul{
+            display: none;
+        }
+        #menu1 ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        #menu1 ul>li{
+            float: left;
+            margin: 3px;
+        }
+        #menu1 > ul > li:hover > ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div><span>웹</span><span>모바일</span><span>게임</span><span>시뮬레이터</span><span>데이터</span></div>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.naver.com">네이버</a></li>
+            <li><a href="https://www.daum.co.kr">다음</a></li>
+            <li><a href="https://www.google.co.kr">구글</a></li>
+        </ul>
+    </nav>
+    <h2>메뉴끝</h2>
+    <div id="menu1">
+        <ul>
+            <li class="item1">
+                <h3>축구</h3><ul>
+                    <li>박지성</li>
+                    <li>손흥민</li>
+                </ul>
+            </li>
+            <li class="item1"><h3>농구</h3>
+                <ul>
+                    <li>허재</li>
+                    <li>서장훈</li>
+                </ul>
+            </li>
+            <li class="item1"><h3>야구</h3>
+                <ul>
+                    <li>김병현</li>
+                    <li>추신수</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
