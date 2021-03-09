@@ -339,4 +339,162 @@ h1:hover{border: 3px dashed red;}
 
 ### 박스 속성
 
-- 이거 아주 중요하다 -김영환 강사님-
+- 이거 아주 중요하다 ★★★ -김영환 강사님-
+
+
+
+```html
+<head>
+    <style>
+        div{
+            width: 100px; 
+            height: 100px; 
+            background: orange; 
+            padding: 5px;
+            margin: 10px;    
+        }
+        <!-- margin은 더 두꺼운걸 기준으로 크기가 정해진다-->
+        div:nth-child(1){
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+</body>
+```
+
+
+
+### 테두리 속성 - border
+
+```css
+<style>
+        body {
+            background: url("https://pbs.twimg.com/profile_images/864131062439436288/lLrt8xq2_400x400.jpg");
+        }
+        div{
+            width: 100px; 
+            height: 100px; 
+            padding: 5px;
+            margin: 10px;
+            /* background: linear-gradient(greenyellow, orange); */
+            background: radial-gradient(white, greenyellow);
+            border: ridge cornflowerblue 5px;
+            border-radius: 50px 50px 50px 50px;
+        }
+        div:nth-child(1){
+            margin: 5px;
+            background-attachment: unset;
+        }
+    </style>
+```
+
+- border: ridge cornflowerblue 5px;의 경우
+
+  각 값은 중복이 되지 않는다.
+
+
+
+### 폰트 속성
+
+- em : 폰트 크기의 배수
+- px : 픽셀
+- %
+
+
+
+#### font-family
+
+폰트 이름을 뜻한다. 즉, 글씨체.
+
+
+
+#### line-height
+
+```css
+<style>
+	
+</style>
+```
+
+
+
+
+
+### 위치 속성
+
+#### position 속성
+
+- static : 태그가 위에서 아래대로 순서대로 배치
+- relative : 초기 위치에서 상하 좌우로 위치 이동
+- fixed : 
+- absolute : 원래 할당받은 자리 기준이 아닌, 자신을 둘러싼 부모 태그 중에 포지션이 absolute거나 relative인 부모를 기준으로 한다.
+
+위치 이동을 하고자 할때는 일반적으로 relative 혹은 fixed를 사용한다.
+
+
+
+```css
+<head>
+	<style>
+        div{
+            width: 150px; height: 100px;
+        }
+        #d1{
+            background: linear-gradient(orange, salmon) ;
+        }
+        #d2{
+            background: linear-gradient(salmon, teal) ;
+            left: 50px;
+            top: 50px;
+            position: absolute;
+        }
+        #d3{
+            background: linear-gradient(teal, orange) ;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">111</div>
+    <div id="d2p">
+        <div id="d2">222</div>
+    </div>
+    <div id="d3">333</div>
+</body>
+```
+
+- 위의 코드에서 d2와 d2p의 상관관계를 생각해보자
+- **[중요] absolute 포지션을 주기 위해서는 반드시 그 부모 태그를 만들고, 부모 태그에 relative를 주면 된다.** 반드시 정의되는 사용법은 아니지만 이게 편한 방법이다.
+
+
+
+#### z-index
+
+- z-index는 크기가 클수록 높이 올라간다.
+
+  여기서 말하는 높이는 화면상 앞뒤 위치 순서를 뜻한다.
+
+
+
+#### overflow 속성
+
+
+
+
+
+### clear
+
+```css
+#content{
+	background: lightgoldenrodyellow;
+    width: 350px;
+    height: 400px;
+    /* margin-left: 150px; */
+    /* padding-left: 150px; */
+    clear: left;
+}
+```
+
+- float:left를 선언한 구역과 중복(겹침)이 발생하지 않는다
