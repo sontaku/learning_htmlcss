@@ -367,6 +367,13 @@ h1:hover{border: 3px dashed red;}
 
 
 
+> tip. margin: 0 auto;
+>
+> - 0은 상하, 오토는 좌우.
+> - 동일 배분 - 가운데 정렬
+
+
+
 ### 테두리 속성 - border
 
 ```css
@@ -467,6 +474,27 @@ h1:hover{border: 3px dashed red;}
 
 - 위의 코드에서 d2와 d2p의 상관관계를 생각해보자
 - **[중요] absolute 포지션을 주기 위해서는 반드시 그 부모 태그를 만들고, 부모 태그에 relative를 주면 된다.** 반드시 정의되는 사용법은 아니지만 이게 편한 방법이다.
+
+
+
+> tip. 태그를 우측으로 보내는 방법 3가지
+>
+> 1. float: right;
+> 2. position : relative;
+> 3. position : absolute;
+
+
+
+> tip2. margin, padding 크기부여 순서
+>
+> 상 -> 우 -> 하 -> 좌(시계방향)
+>
+> - 상 / 우 / 하 / 좌
+> - 상 / 좌우 / 하
+> - 상하 / 좌우
+> - 상하좌우
+
+
 
 
 

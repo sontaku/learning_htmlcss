@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고용포털 상단 연습</title>
+    <style>
+        
+        #outer {
+            width: 1000px;
+            height: 1000px;
+            background: lightgoldenrodyellow;
+            margin: 0 auto;
+        }
+
+        #t_menu {
+            float: right;
+        }
+
+        #outer_1 {
+            overflow: hidden;
+        }
+
+        #outer_2 {
+            overflow: hidden;
+        }
+
+        #outer_2>h1 {
+            float: left;
+            margin: 0px;
+        }
+
+        #input {
+            float: right;
+        }
+
+        #outer_3 ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        #outer_3>ul ul {
+            display: none;
+            position: absolute; 
+        }
+
+        #outer_3>ul>li:hover>ul {
+            display: block;
+            overflow: hidden;
+        }
+
+        #outer_3>ul>li {
+            float: left;
+            margin-right: 100px;
+        }
+        #outer_3 {
+            overflow: hidden;
+        }
+        #notice_wrap{
+            overflow: hidden;
+        }
+
+        .notice {
+            width: 460px;
+            position: relative;
+            float: left;
+            border: 1px  solid brown;
+            border-radius:10px;
+            margin : 0 5px;
+            box-shadow: 5px 5px 5px 0px darkred;
+        }
+        .notice:nth-child(2) {
+            float: right;
+        }
+        
+            .more {
+                position: absolute;
+                width: 22px;
+                top: 10px;
+                right: 20px;
+                overflow: hidden;
+                text-indent: -9999px;
+                background: url("https://www.worktogether.or.kr/images/main/btn_more.gif") no-repeat 0 0;
+            }
+        
+        #weather {
+            width: 60px;
+            height: 60px;
+            text-indent: -9999px;
+            display: block;
+            background: url("https://s.pstatic.net/static/www/img/uit/2021/sp_weather_time_5f2bbb.png");
+            background-position: -60px -60px;
+        }
+        #weather_div{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="outer_1">
+            <!--최상단-->
+            <p id="t_menu">로그인 회원가입 마이페이지</p>
+        </div>
+
+        <div id="outer_2">
+            <!--제목줄-->
+            <h1>장애인 고용 포털</h1>
+            <div id="input"><input type="text" name="" id=""></div>
+        </div>
+
+        <div id="outer_3">
+            <ul>
+                <li>
+                    <h3>채용정보</h3>
+                    <ul>
+                        <li>채용정보 상세검색</li>
+                        <li>지역별</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>인재정보</h3>
+                    <ul>
+                        <li>인재상세검색</li>
+                        <li>직종별</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="notice_wrap">
+        <!-- <div id="board"> -->
+            <div class="notice">
+                <h3>공지사항</h3>
+                <ul>
+                    <li>[전북지사] 청완초등학교 교육공무직원(청소원) 장애인근...</li>
+                    <li>워크투게더 채용공고 접수마감시간 변경 안내</li>
+                    <li>[경기동부지사] "성남미래디자인 워크숍" 참석자 모집(...</li>
+                </ul>
+                <a href="" class="more">더보기</a>
+            </div>
+            <div class="notice">
+                <h3>교육 훈련정보</h3>
+                <ul>
+                    <li>[창원맞춤훈련센터]중소벤처기업진흥공단 맞춤훈련생 모</li>
+                    <li>★추가모집★ 2021년 SK(주)C&C 등 IT기업 연...</li>
+                    <li>[창원맞춤훈련센터]쿠팡풀필먼트서비스 맞춤훈련생 모집</li>
+                </ul>
+                <a href="" class="more">더보기</a>
+            </div>
+        </div>
+        <div id="weather_div">
+            <span id="weather">날씨</span>
+        </div>
+    </div>
+</body>
+
+</html>
