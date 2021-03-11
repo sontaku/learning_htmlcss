@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        @keyframes border_ani{
+            from {
+                border: 50px solid lightcoral;
+            }
+
+            50% {
+                border: 50px groove lightsalmon;
+            }
+
+            to {
+                border: 50px solid lightpink;
+            }
+        }
+
+        @keyframes news_ani {
+            0%{
+                left: 500px;
+            }   
+            100%{
+                left: -500px;
+            }
+        }
+
+        #news > p{
+            animation: border_ani 3s infinite;
+            position: relative;
+            animation: news_ani 5s infinite;
+            /* animation: border_ani 3s infinite; */
+        }
+
+        #news:hover>p {
+            animation-play-state: paused;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="news">
+        <p>‘베일 옆의 꼬마는 커서’…토트넘 17세 유망주 스칼렛 사진 화제</p>
+    </div>
+</body>
+</html>

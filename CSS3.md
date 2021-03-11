@@ -526,3 +526,74 @@ h1:hover{border: 3px dashed red;}
 ```
 
 - float:left를 선언한 구역과 중복(겹침)이 발생하지 않는다
+
+
+
+### 변형 속성 기본
+
+- transition : 모든 transition 속성 사용
+- transition-delay : 이벤트 발생 후 몇 초 후에 재생할지 지정
+- transition-duration : 몇 초 동안 재생할지 지정
+- transition-property : 어떤 속성을 변형할지 지정
+- transition-timing-function : 수치 변형 함수를 지정
+
+
+
+#### transition-delay 속성
+
+- 이벤트가 발생하고 몇 초 동안 기다린 후 애니메이션이 작동할지 지정하는 속성
+- 시간 단위는 주로 ms, s를 사용한다.
+
+
+
+#### transition-timing-fuction 속성
+
+각 속성은 속도 변화 구간이 다르다. (f : fast, s : slow)
+
+- linear (common) : 보통 자주 쓰임
+- ease (c-f)
+- ease-in (s-f)
+- ease-in-out (s-f-s)
+- ease-out (f-s)
+
+
+
+#### 애니메이션 속성
+
+- animation
+- animation-delay
+- animation-direction
+- animation-duration
+- animation-iteration-count
+- animation-name
+- animation-play-state : 애니메이션을 중지하고, 
+- animation-timing-function
+
+
+
+선언은 keyframe, 적용은 animation에서 진행한다.
+
+```css
+#box{
+    animation-name: rint;
+    animation-duration : 2s;
+}
+
+@keyframes rint {
+    from{left:0; transform: rotate(0deg);}
+	50% { left:500px;}
+    to { 
+        left: 500px;
+        transform: rotate(360deg);
+	}
+}
+```
+
+
+
+
+
+
+
+## 변환
+
