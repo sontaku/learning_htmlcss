@@ -597,3 +597,47 @@ h1:hover{border: 3px dashed red;}
 
 ## 변환
 
+
+
+
+
+### 반응형 웹
+
+```css
+<link rel="stylesheet" href="desktop.css" media="screen"/>
+<link rel="stylesheet" href="print.css" media="print"/>
+```
+
+- media : CSS를 적용할 디바이스를 지정하는 형식
+
+  즉, 스타일시트가 특정한 디바이스에서만 작동하게 만든다.
+
+  - aural : 음성 발생장치(TTS: Text To Speech)
+  - braille : 점자 출력 장치
+  - handheld : 전자사전 형태의 컴퓨터
+  - print
+  - projection
+  - screen : PC 화면
+  - tty : 더미 터미널, tele type writer(전보)
+  - tv
+
+
+
+```css
+@media print {
+	#foot{
+    	display: none;
+	}
+}
+```
+
+
+
+#### 화면 방향 전환
+
+Longitude: 경도
+
+latitude : 위도
+
+
+

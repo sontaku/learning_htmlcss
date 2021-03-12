@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS15</title>
+    <style>
+        ul {
+            border: 3px solid black;
+        }
+
+        li {
+            width: 150px;
+            margin: 5px 0;
+            background: seagreen;
+            transition: 0.5s;
+        }
+
+        ul> li:hover {
+            transform: translateX(15px);
+        }
+
+        ul> li:hover + li{
+            transform: translateX(10px);
+        }
+        ul> li:hover + li + li{
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
