@@ -7,33 +7,101 @@
     <title>디지털시계</title>
     <style>
         *{
+            font-size: 32px;
             margin: 0 auto;
             padding: 0;
         }
+        
+        body{
+            height: 1500px;
+        }
+
+        ul {
+            list-style: none;
+            padding-right: 40px;
+        }
+
         #clock {
-            width: 75px;
-            height: 21px;
+            left: 80px;
+            width: 168px;
+            height: 42px;
             position: absolute;
             overflow: hidden;
-            border: 5px solid;
+            border: 10px solid;
+            animation: clock_color 3s infinite;
+        }
+
+        @keyframes clock_color{
+            from {
+                border: 10px groove lightcoral;
+            }
+
+            20% {
+                border: 10px groove lightsalmon;
+            }
+
+            40% {
+                border: 10px groove lightseagreen;
+            }
+            60% {
+                border: 10px groove lightgreen;
+            }
+            80% {
+                border: 10px groove lightblue;
+            }
+
+            to {
+                border: 10px groove lightpink;
+            }
         }
 
         #min {
+            width: 42px;
             float: left;
-            position: relative;
-            
         }
-        ul {
-            list-style: none;
-            padding-right: 10px;
+
+        #min>ul>li {
+            position: relative;
+            animation: sec 3600s infinite linear;
         }
 
         #sec {
+            width: 42px;
             float: left;
         }
+        #sec> ul > li {
+            position: relative;
+            animation: sec 60s infinite linear;
+        }
+
+        @keyframes sec {
+            from {
+                top: 0px;
+            }
+            50% {
+                top: -1281px;
+            }
+            to {
+                top: -2563px;
+            }
+        }
+
+        .time {
+            width: 40px;
+            height: 42px;
+            float: left;
+        }
+
+        #iframe_gif {
+            width: 100%;
+            height: 100%;
+            padding-top: 70px;
+        }
+
     </style>
 </head>
 <body>
+    <h1>시계 감상에 소모한 시간..</h1>
     <div id="clock">
         <div id="min">
             <ul>
@@ -97,8 +165,11 @@
                 <li>57</li>
                 <li>58</li>
                 <li>59</li>
+                <li>00</li>
             </ul>
         </div>
+        <p class="time">분</p>
+        
         <div id="sec">
             <ul>
                 <li>00</li>
@@ -161,8 +232,12 @@
                 <li>57</li>
                 <li>58</li>
                 <li>59</li>
+                <li>00</li>
             </ul>
+
         </div>
+        <p class="time">초</p>
     </div>
+    <iframe src="https://www.wetrend.co.kr/data/editor/1907/da05672814982b2e64b1ad323f878c8e_1564119674_0695.gif" frameborder="0" id="iframe_gif"></iframe>
 </body>
 </html>

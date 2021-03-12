@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국장애인고용공단</title>
+    <style>
+        #body {
+            width: 100%;
+        }
+
+        #outer {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #header {
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #header_main {
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #header_main>h1 {
+            position: absolute;
+            top: 28px;
+            left: 0;
+
+            float: left;
+        }
+
+        #search_div {
+            width: 440px;
+            margin: 0 auto;
+            padding-right: 40px;
+            position: relative;
+            overflow: hidden;
+            top: 35px;
+        }
+
+        #input {
+            border: 3px solid #e47105;
+            outline: none;
+            height: 40px;
+            padding: 0 10px;
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        #header_sub {
+            height: 60px;
+        }
+
+        #header_sub>ul>li:hover {
+            transform: translateY(-20px);
+        }
+
+        #header_sub>ul>li {
+            float: left;
+            padding: 0;
+            text-align: center;
+            display: inline-block;
+            width: 167px;
+            height: 60px;
+            font-weight: bold;
+        }
+
+        #header_sub>ul>li:hover>div>ul {
+            display: block;
+            overflow: hidden;
+
+        }
+
+        .hide_div {
+            display: none;
+            background-color: #fff;
+            position: absolute;
+            z-index: 999;
+            top: 140px;
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #dbdbdb;
+            border-bottom: 2px solid #194281;
+        }
+
+        #header_sub>ul>li:hover>div {
+            display: block;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="header">
+            <div id="header_main">
+                <h1>
+                    <img src="https://www.kead.or.kr/images/main_renew/logo.png" alt="">
+                </h1>
+                <div id="search_div">
+                    <form action="" id="search_form">
+                        <input type="search" name="" id="input" placeholder="검색어를 입력해주세요.">
+                    </form>
+                </div>
+            </div>
+            <div id="header_sub">
+                <ul>
+                    <li>직장 내 장애인<br>인식개선 교육</li>
+                    <li>장애인지원</li>
+                    <li>사업주지원</li>
+                    <li>교육훈련</li>
+                    <li>고객센터</li>
+                    <li>정보공개</li>
+                    <li>공단소개</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
